@@ -3,6 +3,9 @@
   color: #fff; /* Text color */
   padding: 10px 20px; /* Padding around the navbar */
   border-radius: 10px;
+  border-color: whitesmoke;
+  border: 2px solid;
+  margin-top: 175px; /* Adjust the margin-top value to move the navbar down */
 }
 
 ul {

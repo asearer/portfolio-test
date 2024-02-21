@@ -2,7 +2,7 @@
 .home-container {
   text-align: center;
   padding: 50px;
-  
+  margin-top: -45px; /* Adjust the margin-top value to move the container down */
 }
 
 .home-container h1 {
@@ -22,5 +22,3 @@
   color: #007bff;
   text-decoration: none;
 }
-
-
