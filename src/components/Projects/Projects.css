@@ -1,3 +1,18 @@
+.project-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  z-index: 999; /* Ensure the overlay appears on top of other content */
+  overflow: auto; /* Enable scrolling if needed */
+}
+
+.container {
+  padding: 50px;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -5,8 +20,12 @@
 }
 
 .project-item {
+  width: 300px; /* Adjust the width of the project item as needed */
   margin: 20px;
   text-align: center;
+  background-color: white; /* Add a white background to each project item */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Add border radius for rounded corners */
 }
 
 .project-item img {
@@ -31,13 +50,42 @@ a:hover {
   text-decoration: underline; /* Underline on hover */
 }
 
-.project-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent white background */
-  z-index: 999; /* Ensure the overlay appears on top of other content */
-  overflow: auto; /* Enable scrolling if needed */
+.project-card {
+  margin-bottom: 20px;
+}
+
+.project-card.nasa {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 250px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  border: 2px solid;
+}
+
+.project-card.project2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 250px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  border: 2px solid;
+}
+
+.project-card.project3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 250px;
+  margin-left: auto;
+  margin-top: -276px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  border: 2px solid;
+}
+
+.project-card.project4 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 250px;
+  margin-left: auto;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  border: 2px solid;
 }

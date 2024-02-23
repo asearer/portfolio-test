@@ -5,55 +5,63 @@ import './Projects.css';
 const Projects = () => {
   // Define an array of project data containing project titles, URLs, and thumbnail URLs
   const projects = [
-    
     {
       title: "NASA Photo Viewer (GitHub)",
       url: "https://nasa-test-pbadzlxa5-alonza-searers-projects.vercel.app/",
-      repoUrl: "https://github.com/asearer/nasa-photo-viewer"
+      repoUrl: "https://github.com/asearer/nasa-photo-viewer",
+      className: "nasa", // Custom class for styling
     },
     {
       title: "Project 2",
       url: "https://example.com/project2",
-      repoUrl: "https://github.com/username/repo2"
+      repoUrl: "https://github.com/username/repo2",
+      className: "project2", // Custom class for styling
     },
     {
       title: "Project 3",
       url: "https://example.com/project3",
-      repoUrl: "https://github.com/username/repo3"
+      repoUrl: "https://github.com/username/repo3",
+      className: "project3", // Custom class for styling
     },
     {
       title: "Project 4",
       url: "https://example.com/project4",
-      repoUrl: "https://github.com/username/repo4"
+      repoUrl: "https://github.com/username/repo4",
+      className: "project4", // Custom class for styling
     },
     // Add more projects as needed
   ];
 
   return (
     <div className="project-overlay">
-    <div>
-      <h2>Project Gallery</h2>
-      
-      <div className="project-list">
-        {/* Map over the projects array and render each project */}
-        {projects.map((project, index) => (
-          <div key={index} className="project-item">
-            {/* Render the project title as a link */}
-            <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-              <button>{project.title}</button>
-            </a>
-            {/* Render the project URL as a demo button */}
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
-              <button>Demo</button>
-            </a>
-
-          </div>
-
-        ))}
+      <div className="container">
+        <h2>Project Gallery</h2>
+        <div className="row">
+          {/* Map over the projects array and render each project */}
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-6 mb-4">
+              <div className={`card project-card ${project.className}`}>
+                <div className="card-body">
+                  {/* Render the project title as a link */}
+                  <h5 className="card-title">{project.title}</h5>
+                  {/* Render the GitHub logo button */}
+                  <div>
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary mr-2">
+                      <img src="https://img.icons8.com/fluent/24/000000/github.png" alt="GitHub Logo" className="mr-1" />
+                      View Code
+                    </a>
+                  </div>
+                  {/* Render the project URL as a demo button */}
+                  <div>
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-
-    </div>
-    <Link to="/">Go back to Home</Link>
+      <Link to="/" className="btn btn-secondary mt-4">Go back to Home</Link>
     </div>
   );
 };
