@@ -6,16 +6,16 @@ const Projects = () => {
   // Define an array of project data containing project titles, URLs, and thumbnail URLs
   const projects = [
     {
-      title: "NASA Photo Viewer (GitHub)",
-      url: "https://nasa-test-pbadzlxa5-alonza-searers-projects.vercel.app/",
-      repoUrl: "https://github.com/asearer/nasa-photo-viewer",
+      title: "NASA Photo Viewer",
+      url: "https://nasa-test-three.vercel.app/",
+      repoUrl: "https://github.com/asearer/NasaTest",
       className: "nasa", // Custom class for styling
     },
     {
-      title: "Project 2",
-      url: "https://example.com/project2",
-      repoUrl: "https://github.com/username/repo2",
-      className: "project2", // Custom class for styling
+      title: "SpaceX Tracker",
+      url: "https://spacex-tracker-sepia.vercel.app/",
+      repoUrl: "https://github.com/asearer/spacex-tracker",
+      className: "spacex", // Custom class for styling
     },
     {
       title: "Project 3",
