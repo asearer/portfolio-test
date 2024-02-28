@@ -18,7 +18,7 @@ const Projects = () => {
       className: "spacex", // Custom class for styling
     },
     {
-      title: "Project 3",
+      title: "View more examples on GitHub",
       url: "https://example.com/project3",
       repoUrl: "https://github.com/username/repo3",
       className: "project3", // Custom class for styling
