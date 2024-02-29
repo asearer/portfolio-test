@@ -22,6 +22,7 @@ const Projects = () => {
       url: "https://react-cards-pokemon.vercel.app/",
       repoUrl: "https://github.com/asearer/react-cards-pokemon",
       className: "project3", // Custom class for styling
+      
     },
     {
       title: "Simple Fallout Style Terminal",

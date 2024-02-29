@@ -56,6 +56,9 @@ a:hover {
 
 .project-card.nasa {
   background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('/public/nasa.png'); /* Update with your image path */
+  background-size: cover; /* Image will cover the entire container */
+  background-position: center; /* Image will be centered */
   width: 250px;
   margin-top: 50px;
   border-radius: 10px;
@@ -63,29 +66,43 @@ a:hover {
   border: 2px solid;
 }
 
+
 .project-card.spacex {
   background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('/public/spacextrack.png'); /* Update with your image path */
+  background-size: cover; /* Image will cover the entire container */
+  background-position: center; /* Image will be centered */
   width: 250px;
   border-radius: 10px;
   border-color: whitesmoke;
   border: 2px solid;
 }
 
+
 .project-card.project3 {
   background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('/public/cardgame.png');
+  background-size: cover; /* Image will cover the entire container */
+  background-position: center; /* Image will be centered */
   width: 250px;
   margin-left: auto;
   margin-top: -276px;
   border-radius: 10px;
   border-color: whitesmoke;
   border: 2px solid;
+  color:black;
 }
+
 
 .project-card.project4 {
   background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('/public/falloutterm.png'); /* Update with your image path */
+  background-size: cover; /* Image will cover the entire container */
+  background-position: center; /* Image will be centered */
   width: 250px;
   margin-left: auto;
   border-radius: 10px;
   border-color: whitesmoke;
   border: 2px solid;
 }
+
