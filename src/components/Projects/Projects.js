@@ -18,15 +18,15 @@ const Projects = () => {
       className: "spacex", // Custom class for styling
     },
     {
-      title: "View more examples on GitHub",
-      url: "https://example.com/project3",
-      repoUrl: "https://github.com/username/repo3",
+      title: "2 in 1 Random Card Game",
+      url: "https://react-cards-pokemon.vercel.app/",
+      repoUrl: "https://github.com/asearer/react-cards-pokemon",
       className: "project3", // Custom class for styling
     },
     {
-      title: "Project 4",
-      url: "https://example.com/project4",
-      repoUrl: "https://github.com/username/repo4",
+      title: "Simple Fallout Style Terminal",
+      url: "https://asearer.github.io/FalloutTerm/",
+      repoUrl: "https://github.com/asearer/FalloutTerm/tree/main",
       className: "project4", // Custom class for styling
     },
     // Add more projects as needed
@@ -36,6 +36,7 @@ const Projects = () => {
     <div className="project-overlay">
       <div className="container">
         <h2>Project Gallery</h2>
+
         <div className="row">
           {/* Map over the projects array and render each project */}
           {projects.map((project, index) => (
