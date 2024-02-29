@@ -90,7 +90,7 @@ a:hover {
   border-radius: 10px;
   border-color: whitesmoke;
   border: 2px solid;
-  color:black;
+
 }
 
 
@@ -105,4 +105,20 @@ a:hover {
   border-color: whitesmoke;
   border: 2px solid;
 }
+
+.project-card.project5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('/public/codepen.png'); /* Update with your image path */
+  background-size: cover; /* Image will cover the entire container */
+  background-position: center; /* Image will be centered */
+  width: 250px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  border: 2px solid;
+}
+
 
